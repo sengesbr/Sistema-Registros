@@ -2,9 +2,9 @@
     RewriteEngine On
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.*)$ /registro/index.php/$1 [L]
+    RewriteRule ^(.*)$ /sistema_registro/index.php/$1 [L]
 </IfModule>
 
 <IfModule !mod_rewrite.c>
-    ErrorDocument 404 /registro/index.php
+    ErrorDocument 404 /sistema_registro/index.php
 </IfModule>
